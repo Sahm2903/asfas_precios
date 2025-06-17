@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/',methods=['GET'])
+@app.route('/scraper',methods=['GET'])
 def run_scraper():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--headless")
